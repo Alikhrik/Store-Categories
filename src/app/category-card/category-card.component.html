@@ -1,0 +1,5 @@
+<div class="category">
+    <img [src]="Category.imageUrl" alt="" class="title-image">
+    <a href="#" [ngClass]="Category.IsOnlyTitle() ? 'only-title' : 'title'">{{Category.title}}</a>
+    <a href="#" class="subtitle" *ngFor="let t of Category.subtitles;">{{t}}</a>
+</div>
